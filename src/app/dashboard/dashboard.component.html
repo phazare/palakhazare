@@ -1,12 +1,18 @@
 <div class="dashboard-container">
-  <button class="scroll-to-top" *ngIf="showScrollButton" (click)="scrollToTop()">
-    <i class="bi bi-arrow-up"></i> 
+  <button
+    class="scroll-to-top"
+    *ngIf="showScrollButton"
+    (click)="scrollToTop()"
+  >
+    <i class="bi bi-arrow-up"></i>
   </button>
   <header class="container">
     <section class="row header-container mt-5 align-items-center">
       <h2 class="col-5">Palak Hazare</h2>
       <div class="col-7">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-end">
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary justify-content-end"
+        >
           <div class="text-right">
             <button
               class="navbar-toggler"
@@ -22,19 +28,41 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item px-3 cursor-pointer">
-                  <h5 class="" aria-current="page" (click)="scrollTo('about')">About</h5>
+                  <h5 class="" aria-current="page" (click)="scrollTo('about')">
+                    About
+                  </h5>
                 </li>
                 <li class="nav-item px-3 cursor-pointer">
-                  <h5 class="" aria-current="page" (click)="scrollTo('skills')">Skills</h5>
+                  <h5 class="" aria-current="page" (click)="scrollTo('skills')">
+                    Skills
+                  </h5>
                 </li>
                 <li class="nav-item px-3 cursor-pointer">
-                  <h5 class="" aria-current="page">Experience</h5>
+                  <h5
+                    class=""
+                    aria-current="page"
+                    (click)="scrollTo('experience')"
+                  >
+                    Experience
+                  </h5>
                 </li>
                 <li class="nav-item px-3 cursor-pointer dropdown">
-                  <h5 class="" aria-current="page">Project</h5>
+                  <h5
+                    class=""
+                    aria-current="page"
+                    (click)="scrollTo('highlights')"
+                  >
+                    Highights
+                  </h5>
                 </li>
                 <li class="nav-item px-3 cursor-pointer">
-                  <h5 class="" aria-current="page" (click)="scrollTo('contact')">Contact</h5>
+                  <h5
+                    class=""
+                    aria-current="page"
+                    (click)="scrollTo('contact')"
+                  >
+                    Contact
+                  </h5>
                 </li>
               </ul>
             </div>
@@ -43,7 +71,7 @@
       </div>
     </section>
   </header>
-  
+
   <section class="row intro-container my-5">
     <div class="col-6 justify-content-end align-content-around">
       <div class="profile-picture-container text-center">
@@ -60,10 +88,9 @@
         <h2>Palak Hazare</h2>
         <h6>Frontend Developer</h6>
         <div class="btn-container d-flex justify-content-evenly mt-4">
-          <button class="btn btn-outline-primary rounded-5">
+          <button class="btn btn-primary rounded-5" (click)="downloadResume()">
             Download Resume
           </button>
-          <button class="btn btn-primary rounded-5">Contact Info</button>
         </div>
       </div>
     </div>
@@ -96,14 +123,15 @@
         Angular and am proficient in HTML5, CSS3, Bootstrap, jQuery, JavaScript,
         RxJs, and Sass, along with experience in hybrid mobile app development
         using Apache Cordova. With a proven ability to collaborate effectively
-        with clients and senior stakeholders, I have successfully handled on-site
-        project development and communicated with CTOs and Directors throughout
-        the software development life cycle. Adaptable and technically proficient,
-        I thrive in challenging roles, driven by a strong technical background.
+        with clients and senior stakeholders, I have successfully handled
+        on-site project development and communicated with CTOs and Directors
+        throughout the software development life cycle. Adaptable and
+        technically proficient, I thrive in challenging roles, driven by a
+        strong technical background.
       </p>
     </div>
   </section>
-  <section class="skills-container text-center my-5"  id="skills">
+  <section class="skills-container text-center my-5" id="skills">
     <div class="p-4">
       <h2 class="mb-4">Skills</h2>
       <div class="row skills-section">
@@ -111,19 +139,19 @@
           <div class="px-5">
             <ul class="list-unstyled">
               <li class="align-items-center justify-content-start d-flex pb-2">
-                <img src="./assets/angular.svg" alt="">
+                <img src="./assets/angular.svg" alt="" />
                 <span>Angular</span>
               </li>
               <li class="align-items-center justify-content-start d-flex pb-2">
-                <img src="./assets/javascript.svg" alt="">
+                <img src="./assets/javascript.svg" alt="" />
                 <span>JavaScript</span>
               </li>
               <li class="align-items-center justify-content-start d-flex pb-2">
-                <img src="./assets/typescript.svg" alt="">
+                <img src="./assets/typescript.svg" alt="" />
                 <span>Typescript</span>
               </li>
               <li class="align-items-center justify-content-start d-flex pb-2">
-                <img src="./assets/jquery.svg" alt="">
+                <img src="./assets/jquery.svg" alt="" />
                 <span>jQuery</span>
               </li>
             </ul>
@@ -133,19 +161,19 @@
           <div class="px-5">
             <ul class="list-unstyled">
               <li class="align-items-center justify-content-start d-flex pb-2">
-                <img src="./assets/redux.svg" alt="">
+                <img src="./assets/redux.svg" alt="" />
                 <span>Redux</span>
               </li>
               <li class="align-items-center justify-content-start d-flex pb-2">
-                <img src="./assets/rxjs.svg" alt="">
+                <img src="./assets/rxjs.svg" alt="" />
                 <span>RxJs</span>
               </li>
               <li class="align-items-center justify-content-start d-flex pb-2">
-                <img src="./assets/html.svg" alt="">
+                <img src="./assets/html.svg" alt="" />
                 <span>HTML</span>
               </li>
               <li class="align-items-center justify-content-start d-flex pb-2">
-                <img src="./assets/css.svg" alt="">
+                <img src="./assets/css.svg" alt="" />
                 <span>CSS</span>
               </li>
             </ul>
@@ -155,19 +183,19 @@
           <div class="px-5">
             <ul class="list-unstyled">
               <li class="align-items-center justify-content-start d-flex pb-2">
-                <img src="./assets/sass.svg" alt="">
+                <img src="./assets/sass.svg" alt="" />
                 <span>SCSS</span>
               </li>
               <li class="align-items-center justify-content-start d-flex pb-2">
-                <img src="./assets/cordova.svg" alt="">
+                <img src="./assets/cordova.svg" alt="" />
                 <span>Apache Cordova</span>
               </li>
               <li class="align-items-center justify-content-start d-flex pb-2">
-                <img src="./assets/sql.svg" alt="">
+                <img src="./assets/sql.svg" alt="" />
                 <span>SQL</span>
               </li>
               <li class="align-items-center justify-content-start d-flex pb-2">
-                <img src="./assets/core-java.svg" alt="">
+                <img src="./assets/core-java.svg" alt="" />
                 <span>Core Java</span>
               </li>
             </ul>
@@ -176,9 +204,103 @@
       </div>
     </div>
   </section>
-  <section class="contact-container my-5" id="contact">
+  <section class="experience-container my-5 mx-4 text-start" id="experience">
+    <h2 class="text-center my-5">Experience</h2>
+
+    <div class="accordion" id="experienceAccordion">
+      <div
+        class="accordion-item"
+        *ngFor="let exp of experienceList; let i = index"
+      >
+        <h2 class="accordion-header" id="heading{{ i }}">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            [attr.data-bs-target]="'#collapse' + i"
+            [attr.aria-expanded]="i === 0 ? 'true' : 'false'"
+            [attr.aria-controls]="'collapse' + i"
+          >
+          <div class="w-100 d-flex justify-content-between align-items-center pe-2">
+            <span class="fw-semibold">{{ exp.title }}</span>
+            <span class="text-muted small">{{ exp.date }}</span>
+          </div>
+          </button>
+        </h2>
+        <div
+          [id]="'collapse' + i"
+          class="accordion-collapse collapse"
+          [class.show]="i === 0"
+          [attr.aria-labelledby]="'heading' + i"
+          data-bs-parent="#experienceAccordion"
+        >
+          <div class="accordion-body">
+            <ul>
+              <li *ngFor="let point of exp.points">{{ point }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="my-5 mx-4" id="highlights">
+    <h2 class="text-center mb-4">Highlights & Personal Projects</h2>
+
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title">Highlights</h4>
+            <ul class="text-start">
+              <li>
+                Generative AI Certifications <br />
+                <!-- <ul>
+                  <li>What is Generative AI</li>
+                  <li>Introduction to Artificial Intelligence</li>
+                  <li>Ethics in the Age of Generative AI</li>
+                  <li>
+                    Generative AI: The Evolution of Thoughtful Online Search
+                  </li>
+                  <li>Learning Microsoft 365 Copilot</li>
+                  <li>Streamlining Your Work with Copilot</li>
+                </ul> -->
+              </li>
+              <li>
+                Achieved back-to-back promotions within two years for
+                exceptional performance and leadership.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title">Personal Projects</h4>
+            <ul class="text-start">
+              <li>
+                Created a <strong>React-based app</strong> to explore
+                component-based architecture, routing, and hooks.
+                <br />
+                <a
+                  href="https://phazare.github.io/healthy-food/"
+                  target="_blank"
+                  class="btn btn-outline-primary btn-sm mt-2"
+                >
+                  View Web App
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact-container my-5 mx-4" id="contact">
     <h2 class="text-center mb-4">Get in Touch</h2>
-    <div class="row px-3">
+    <div class="row">
       <div class="col-4">
         <div class="card text-center">
           <i class="bi bi-envelope fs-1 text-primary"></i>
