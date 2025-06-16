@@ -15,7 +15,7 @@ export class DashboardComponent {
       date: 'Mar 2025 - Present',
       points: [
         'Developing the application so that investment manager can review and manage the accounts.',
-        'Using Ag grid and Highcharts to convert TIBCO Spotfire visualizations.',
+        'Using Ag grid and Highcharts to convert TIBCO Spotfire visualizations by populating 200k+ records in highcharts.',
         'Engaging with product owner and agile process.',
         'Using Angular 18 and Playwright for testing.',
       ],
